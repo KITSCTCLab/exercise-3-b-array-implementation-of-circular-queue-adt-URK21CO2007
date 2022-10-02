@@ -1,5 +1,5 @@
 class MyCircularQueue:
-    def __init__(self, size: int):
+    def _init_(self, size: int):
         self.size=size
         self.queue=[None]*size
         self.rear=-1
@@ -77,3 +77,8 @@ for i in range(len(operations)):
     elif operations[i] == "dequeue":
         result.append(obj.dequeue())
     elif operations[i] == "is_full":
+        result.append(obj.is_full())
+    elif operations[i] == "is_empty":
+        result.append(obj.is_empty())
+
+print(result)
